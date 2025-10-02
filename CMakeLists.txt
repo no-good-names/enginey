@@ -8,12 +8,13 @@ set(CMAKE_PROJECT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_subdirectory(lib/glad EXCLUDE_FROM_ALL)
 add_subdirectory(lib/glfw EXCLUDE_FROM_ALL)
+add_subdirectory(lib/glm EXCLUDE_FROM_ALL)
 
 include_directories(
         ./lib/stb
 )
 
-set(LIBS glad glfw m)
+set(LIBS glad glfw glm m)
 
 add_executable(enginey 
     src/main.cpp
